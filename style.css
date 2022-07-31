@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(250, 209, 43);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(250, 209, 43, 1)), to(rgba(220, 247, 23, 1)));
+    background: -o-linear-gradient(left, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+    background: linear-gradient(90deg, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+    padding: 25px;
+}
+
+.header-bars {
+    display: none;
+}
+
+.header-wrapper {
+    width: 81%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 190px;
+}
+
+.header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    text-shadow: 0 0 9px rgb(0, 0, 0);
+    color: rgb(38, 235, 88);
+    font-weight: 500;
+}
+
+#main {
+    background: rgb(58, 58, 56);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(250, 209, 43, 1)), to(rgba(220, 247, 23, 1)));
+    background: -o-linear-gradient(left, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+    background: linear-gradient(90deg, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+}
+
+.main-wrapper {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.inner {
+    padding: 60px 0;
+}
+
+.main-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.main-wrapper img {
+    width: 30%;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.main-details {
+    width: 450px;
+}
+
+.main-btn {
+    margin-top: 10px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(28, 103, 243);
+    border-radius: 40px;
+    color: white;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+
+
+}
+
+.main-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#anekdot {
+    padding: 8%;
+    background: rgb(250, 209, 43);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(250, 209, 43, 1)), to(rgba(220, 247, 23, 1)));
+    background: -o-linear-gradient(left, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+    background: linear-gradient(90deg, rgba(250, 209, 43, 1) 0%, rgba(220, 247, 23, 1) 100%);
+}
+
+.ak-text {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#anekdot-btn {
+    margin: 10px 5px 0 5px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(28, 103, 243);
+    border-radius: 40px;
+    color: white;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+
+@media (max-width: 700px) {
+    .main-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .main-wrapper {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .main-details {
+        width: 377px;
+    }
+
+    .header-bars {
+        display: block;
+    }
+
+    .main-wrapper img {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 10%;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    .main-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #main h1 {
+        font-size: 1.25rem;
+    }
+}
